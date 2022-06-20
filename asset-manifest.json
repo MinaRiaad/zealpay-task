@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zealpay-task/static/css/main.6bf026e9.css",
+    "main.js": "/zealpay-task/static/js/main.9f24cf05.js",
+    "static/js/787.d124b11d.chunk.js": "/zealpay-task/static/js/787.d124b11d.chunk.js",
+    "index.html": "/zealpay-task/index.html",
+    "main.6bf026e9.css.map": "/zealpay-task/static/css/main.6bf026e9.css.map",
+    "main.9f24cf05.js.map": "/zealpay-task/static/js/main.9f24cf05.js.map",
+    "787.d124b11d.chunk.js.map": "/zealpay-task/static/js/787.d124b11d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bf026e9.css",
+    "static/js/main.9f24cf05.js"
+  ]
+}
