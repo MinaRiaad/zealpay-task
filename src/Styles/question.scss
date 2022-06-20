@@ -1,0 +1,43 @@
+.question-root {
+  @include flex-container(column, flex-start);
+  width: $default-width;
+  //   height: 100vh;
+
+  .question-container {
+    @include flex-container(column);
+    width: 60%;
+    p {
+      font-size: 40px !important;
+      line-height: 53px !important;
+      text-align: center;
+      display: flex
+    }
+    div {
+      @include flex-container(row, center, center, 30px, 70px);
+      width: 80%;
+      div {
+        position: relative;
+        background: $default-color;
+        border: $default-border;
+        border-radius: $default-border-radius;
+        width: 420px;
+        height: 120px;
+        div {
+          position: absolute;
+          border: $default-border;
+          width: 25px;
+          height: 33px;
+          margin: 10px;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .skip-next-container {
+    @include flex-container(row, center, center, 10px, 120px);
+    width: 60%;
+    margin-top: 60px;
+  }
+}
