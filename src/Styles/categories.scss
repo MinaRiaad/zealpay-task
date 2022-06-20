@@ -1,0 +1,44 @@
+.root {
+  @include flex-container;
+  width: $default-width;
+  margin-bottom: 50px;
+
+  .categories-container {
+    display: flex;
+    width: 60%;
+
+    .category-container {
+      @include flex-container;
+      background: $primary-color;
+      border: $default-border;
+      border-radius: $default-border-radius;
+      height: 120px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .sub-container {
+      @include flex-container;
+      width: $default-width;
+
+      p {
+        font-weight: 500 !important;
+        font-size: 60px !important;
+      }
+
+      button {
+        background: $default-color;
+        border: $default-border;
+        border-radius: $default-border-radius;
+        margin-top: 45px;
+        height: 46px;
+        width: 192px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom {
+    bottom: -810px;
+  }
+}

@@ -1,0 +1,49 @@
+.welcome-container {
+  @include flex-container(column);
+  height: 100vh;
+
+  button {
+    width: 192px;
+    height: 46px;
+    background: $default-color;
+    border: $default-border;
+    border-radius: $default-border-radius;
+    margin-top: 45px;
+    cursor: pointer;
+  }
+}
+
+.form-container {
+  background: $primary-color;
+  border-radius: 22px;
+  width: 616px;
+  height: 448px;
+  @include flex-container(column);
+
+  input {
+    width: 410px;
+    height: 110px;
+    background: $secondary-color;
+    border: $default-border;
+    border-radius: $default-border-radius;
+    font-weight: 700;
+    padding: 35px;
+  }
+
+  div {
+    margin-top: 40px;
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background: $default-color;
+    border: $default-border;
+    border-radius: $default-border-radius;
+    cursor: pointer;
+  }
+}
