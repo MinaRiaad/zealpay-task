@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+div,
+input {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  line-height: 33px;
+  font-size: 25px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.shortcuts-container {
+  @include flex-container(row, space-between, center, 10px, 40px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+
+  .tf-question {
+    @include flex-container;
+  }
+}
+
+.shortcut {
+  display: flex;
+  column-gap: 10px;
+}
+
+.shortcut-text::first-letter {
+  background: $default-color;
+  border: $default-border;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+button {
+  background: $default-color;
+  border: $default-border;
+  border-radius: $default-border-radius;
+  margin-top: 45px;
+  height: 46px;
+  width: 192px;
+  cursor: pointer;
+}
+
+.timer-wrapper {
+  display: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  div {
+    background: $primary-color;
+    border-radius: 50%;
+  }
+}
